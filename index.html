@@ -1,0 +1,62 @@
+<link href="style.css" rel="stylesheet">
+<div id="main">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill your Details</p>
+  <form id="survey-form">
+    <label for="name" class="labels" id="name-label">* Name</label>
+    <input name="name" type="text" id="name"  placeholder="Enter Your Name" class="input" required><br>
+    <label for="email" class="labels" id="email-label">* Email</label>
+    <input name="email" type="email" id="email" placeholder="Enter your email" class="input" required><br>
+    <label for="age" class="labels" id="number-label">*Age</label>
+    <input name="age" type="number" id="number" placeholder="Enter your age" class="input" min="1" max="100" required><br>
+    <label for="currentPos" class="labels">What is your nationality?</label>
+      <select class="input" id="dropdown" name="currentPos">
+        <option disabledValue >Select an option</option>
+        <option value="ugn">Ugandan</option>
+        <option value="ken">Kenyan</option>
+        <option value="tz">Tanzanian</option>
+        <option value="rw">Rwandese</option>
+        <option value="br">Burundian</option>
+       </select> <br>
+       <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">Do you love Tourism?</label>
+           </div>
+           <div class="rightTab">
+            <ul style="list-style: none;">
+              <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+<li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+<li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+</ul>
+</div>
+</div>
+<div class="rowTab">
+<div class="labels">
+<label for="preferences">Which wild animals would you wish to find in the game parks?<br>(Check all that apply): </label>
+</div>
+<div class="rightTab">
+<ul id="preferences" style="list-style: none;">
+<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Lion</label></li>
+<li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Zebras</li>
+<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Chimpanze</label></li>
+<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Golliras</label></li>
+<li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Hippopotamus</label></li>
+<li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Birds</label></li>
+<li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Buffalo</label></li>
+<li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Leopard</label></li>
+<li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Giraffe</label></li>
+<li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Hyena</label></li>
+<li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Other wild animals</label></li>
+</ul>
+</div>
+</div>
+<div class="rowTab">
+<div class="labels">
+<label for="comments">Feedback</label>
+</div>
+<div class="rightTab">
+  <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+</div>
+</div>
+<button id="submit" type="submit">Submit</button>
+</form></div>
